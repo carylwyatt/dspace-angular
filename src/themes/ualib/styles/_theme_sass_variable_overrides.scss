@@ -5,25 +5,33 @@
 
 // $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 //
-// $gray-700: #495057 !default;  // Bootstrap $gray-700
-// $gray-100: #f8f9fa !default;  //           $gray-100
+$gray-700: #495057 !default; // Bootstrap $gray-700
+$gray-100: #f8f9fa !default; //           $gray-100
 //
-// $blue:   #2B4E72 !default;
-// $green:  #94BA65 !default;
-// $cyan:   #006666 !default;
-// $yellow: #ec9433 !default;
-// $red:    #CF4444 !default;
-// $dark:   darken($blue, 17%) !default;
-//
-// $theme-colors: (
-//   primary: $blue,
-//   secondary: $gray-700,
-//   success: $green,
-//   info: $cyan,
-//   warning: $yellow,
-//   danger: $red,
-//   light: $gray-100,
-//   dark: $dark
-// ) !default;
-//
-// $link-color: map-get($theme-colors, info) !default;
+$blue: #007bff !default; // Bootstrap default blue
+$green: #94ba65 !default;
+$cyan: #006666 !default;
+$yellow: #ec9433 !default;
+$red: #cf4444 !default;
+$dark: darken($blue, 17%) !default;
+$ua-crimson: #750000 !default;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-700,
+  success: $green,
+  info: $ua-crimson,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $dark,
+) !default;
+
+$link-color: map-get($theme-colors, primary) !default;
+
+// UA fonts (Roboto for body and Open Sans for headings)
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// Configure Bootstrap to use this font
+$font-family-sans-serif: "Roboto", sans-serif;
+$headings-font-family: "Open Sans", sans-serif;
