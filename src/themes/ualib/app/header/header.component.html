@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header bg-info">
   <nav
     role="navigation"
     [attr.aria-label]="'nav.user.description' | translate"
@@ -7,9 +7,11 @@
     <div class="d-flex flex-grow-1">
       <a class="navbar-brand m-2" routerLink="/home">
         <img
-          src="assets/images/UniversityLibrariesWhite.png"
+          src="assets/ualib/images/UniversityLibrariesWhite.png"
           [attr.alt]="'menu.header.image.logo' | translate"
-        />
+        /><span
+          ><h1 class="h4 d-inline pl-3">Institutional Repository</h1></span
+        >
       </a>
     </div>
     <div
@@ -36,5 +38,5 @@
       </div>
     </div>
   </nav>
-  <ds-themed-navbar></ds-themed-navbar>
+  <!-- <ds-themed-navbar></ds-themed-navbar> -->
 </header>
