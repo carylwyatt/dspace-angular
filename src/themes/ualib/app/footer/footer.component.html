@@ -1,0 +1,122 @@
+<footer class="text-lg-start">
+  <div *ngIf="showTopFooter" class="top-footer">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a routerLink="./" class="">Lorem ipsum</a>
+            </li>
+            <li>
+              <a routerLink="./" class="">Ut facilisis</a>
+            </li>
+            <li>
+              <a routerLink="./" class="">Aenean sit</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a routerLink="./" class="">Suspendisse potenti</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque
+            ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae
+            repudiandae aliquam voluptatem veniam, est atque cumque eum delectus
+            sint!
+          </p>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div
+    class="
+      bottom-footer
+      p-1
+      d-flex
+      justify-content-center
+      align-items-center
+      text-white
+      mt-2
+    "
+  >
+    <div class="content-container">
+      <a class="m-2" href="https://lib.ua.edu/">
+        <img
+          src="assets/ualib/images/UniversityLibrariesAlt.jpeg"
+          [attr.alt]="'menu.header.image.logo' | translate"
+        />
+      </a>
+      <p class="m-0"></p>
+      <ul
+        class="
+          footer-info
+          list-unstyled
+          small
+          d-flex
+          justify-content-center
+          mb-0
+          py-3
+        "
+      >
+        <li>
+          <a class="text-primary" href="#" (click)="showCookieSettings()">{{
+            "footer.link.cookies" | translate
+          }}</a>
+        </li>
+        <li>
+          <a class="text-primary" routerLink="info/privacy">{{
+            "footer.link.privacy-policy" | translate
+          }}</a>
+        </li>
+        <li>
+          <a class="text-primary" routerLink="info/end-user-agreement">{{
+            "footer.link.end-user-agreement" | translate
+          }}</a>
+        </li>
+      </ul>
+      <p class="text-secondary text-left small py-2">
+        If you find content within the University of Alabama’s Institutional
+        Repository that you believe infringes your copyright or otherwise
+        violates the law, let us know, and we’ll carefully review the material
+        and take appropriate action. You can send notification to
+        <a href="mailto:security@ua.edu">security@ua.edu</a>. Copyright
+        notifications must comply with the requirements of Section 512(C)(3) of
+        the Digital Millennium Copyright Act. Note that only the copyright owner
+        or an authorized representative of the copyright owner can file a DMCA
+        Infringement Notice on his/her behalf.
+      </p>
+      <p class="text-secondary text-left small py-2">
+        For more information, please see
+        <a href="https://www.ua.edu/copyright/"
+          >The University of Alabama copyright statement</a
+        >.
+      </p>
+    </div>
+  </div>
+  <!-- Copyright -->
+</footer>
