@@ -5,5 +5,7 @@
   //--ds-header-logo-height-xs: 50px;
   --ds-header-icon-color: #{$white};
   //--ds-header-icon-color-hover: #{darken($link-color, 15%)};
+  --ds-navbar-link-color: #{$primary};
+  --ds-navbar-link-color-hover: #{darken($primary, 15%)};
   --ds-footer-bg: #{$white};
 }
