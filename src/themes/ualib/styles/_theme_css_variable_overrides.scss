@@ -8,4 +8,6 @@
   --ds-navbar-link-color: #{$primary};
   --ds-navbar-link-color-hover: #{darken($primary, 15%)};
   --ds-footer-bg: #{$white};
+  --ds-breadcrumb-link-color: #{$primary};
+  --ds-breadcrumb-link-active-color: #{darken($primary, 30%)};
 }
